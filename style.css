@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1370px;
+}
+.custom_container {
+  max-width: 1800px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+header img {
+  width: 81px;
+  height: 50px;
+}
+
+header div {
+  padding: 10px 0;
+}
+
+.banner {
+  background-image: url("https://www.windtrebusiness.it/Assets/M16/179/C_4_M16_185_sfondoBig.jpg");
+  background-repeat: no-repeat;
+  padding: 35px 0;
+  background-size: cover;
+}
+.right_div .form {
+  background-color: white;
+  max-width: 450px;
+  margin: auto;
+}
+.bottom_div .form {
+  width: 100%;
+  background-color: white;
+}
+.right_div .form h5,
+.bottom_div .form h5 {
+  text-align: center;
+  color: #ff6900;
+}
+.right_div .form h6,
+.bottom_div .form h6 {
+  text-align: center;
+}
+.right_div .form button,
+.bottom_div .form button {
+  background-color: #ff6900;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 100px;
+  border: none;
+}
+.right_div .expires {
+  background-color: #ff6900;
+  max-width: 450px;
+  margin: auto;
+}
+
+.bottom_div .expires {
+  background-color: #ff6900;
+  width: 100%;
+  margin: auto;
+}
+.right_div .expires p,
+.bottom_div .expires p {
+  font-size: 12px;
+  color: gray;
+}
+
+.offer-form {
+  background-color: white;
+  width: 450px;
+  height: 440px;
+}
+
+.orange-text {
+  color: #ff6900;
+}
+
+.form-text {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
+.bottom-border-only {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.form-check-label {
+  font-size: 11px;
+}
+
+.form-footer-text {
+  font-size: 12px;
+}
+
+.input-footer-text {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.input-text {
+  font-size: 15px;
+}
+@keyframes decreaseScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.label-small {
+  transform: scale(0.8);
+  transition: 0.3s ease-out;
+  transform-origin: top left;
+}
+
+.reset-text {
+  font-size: 18px;
+}
+.box_Container {
+  width: 100%;
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.box_Container img {
+  width: 81px;
+  height: 50px;
+}
+footer {
+  height: 250px;
+  background-color: #58595b;
+}
+
+footer img {
+  margin-top: 65px;
+  width: 80px;
+}
+.footer-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.accordion-button {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.accordion-button:not(.collapsed) {
+  border-color: unset;
+  background-color: unset;
+}
+
+.accordion-button:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+
+.accordion-body {
+  background-color: #f4f4f4;
+}
+.accordion-body a {
+  color: #ff6900;
+  text-decoration: none;
+  font-weight: 700;
+}
+.accordion-body a:hover {
+  text-decoration: underline;
+}
+
+.accordion-header {
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.modal-body img {
+  height: 100px;
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    height: 500px;
+  }
+}
+
+
+
+
+/* ================== */
+.input__focus {
+  position: relative;
+}
+
+.input__focus label{
+  padding-top: 20px;
+  position: absolute;
+  top: -20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input__focus:focus-within label, .input__focus:valid-within label {
+  padding-top: 10px;
+  font-size: 12px;
+}
+/* ================== */
+
+
+
+input, span, label{
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  z-index: 999;
+}
+
+input.input__control{border-bottom: 1px solid #000; z-index: 9999; position: relative; margin-bottom: 10px;}
+
+input:focus{
+  outline: none;
+}
+
+input.input__control{
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  background: transparent;
+  transition: padding-top 0.2s ease,  margin-top  0.2s ease;
+  overflow-x: hidden;
+}
+
+input.input__control + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  transition: 0.4s ease;
+  height: 0;
+}
+
+input.input__control:focus + label > span,
+input.input__control:valid + label > span{  
+  font-size: 0.8rem;
+  padding-top: 0px;
+  transition: 0.3s ease-in-out;
+}
+
+input.input__control:valid + label{
+  border-color: #00cb00;
+}
+
+input.input__control + label > span{
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8f8f8f;
+  font-size: 1rem;
+  padding-top: 20px;
+  top: -30px;
+  left: 0px;
+  z-index: -1;
+  transition: top 0.2s ease, 
+  font-size 0.2s ease, color 0.2s ease;        
+}
+
+@keyframes appear{
+  100%{
+      opacity: 1;
+  }
+}

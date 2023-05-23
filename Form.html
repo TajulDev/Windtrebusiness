@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        margin-top: 100px;
+        background: #000;
+    }
+
+    input, span, label{
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        border: none;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    input.input__control{
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 0;
+        margin: 0;
+        border: none;
+        /* width: 80%; */
+        background: transparent;
+        color: #fff;
+        transition: padding-top 0.2s ease,  margin-top  0.2s ease;
+        overflow-x: hidden;
+    }
+
+    input.input__control + label {
+        display: block;
+        position: relative;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0;
+        width: 10%;
+        border-top: 1px solid #388bff;
+        transition: 0.4s ease;
+        height: 0;
+    }
+
+    input.input__control:focus + label {
+        /* width: 80%; */
+    }
+
+    input.input__control:focus,
+    input.input__control:valid{
+        /* padding-top: 35px; */
+    }
+
+    input.input__control:focus + label > span,
+    input.input__control:valid + label > span{  
+        /* top: -100px; */
+        /* top: -65px; */
+        font-size: 1rem;
+        color: #fff;
+        padding-top: 0px;
+        transition: 0.3s ease-in-out;
+    }
+
+    input.input__control:valid + label{
+        border-color: #00cb00;
+    }
+
+    input.input__control + label > span{
+        font-weight: 300;
+        margin: 0;
+        position: absolute;
+        color: #8f8f8f;
+        font-size: 1.4rem;
+        padding-top: 35px;
+        top: -66px;
+        left: 0px;
+        z-index: -1;
+        transition: top 0.2s ease, 
+        font-size 0.2s ease, color 0.2s ease;        
+    }
+
+    @keyframes appear{
+        100%{
+            opacity: 1;
+        }
+    }
+
+
+</style>
+
+<body>
+    
+    <form>
+        <input type="text" name="name" class="input__control" id="name" required autocomplete="off" />
+        <label for="name"><span>What's your name?</span></label>
+    </form>
+</body>
+</html>
